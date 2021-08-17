@@ -1,3 +1,5 @@
+/** @format */
+
 html,
 body {
   padding: 0;
@@ -13,4 +15,59 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("https://www.blockrenovation.com/assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Folio";
+  font-display: swap;
+  src: url("https://static2.blockrenovation.com/fonts/foliostd-light.woff2")
+      format("woff2"),
+    url("https://static2.blockrenovation.com/fonts/foliostd-light.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Folio";
+  font-display: swap;
+  src: url("https://static2.blockrenovation.com/fonts/foliostd-medium.woff2")
+      format("woff2"),
+    url("https://static2.blockrenovation.com/fonts/foliostd-medium.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Folio";
+  font-display: swap;
+  src: url("https://static2.blockrenovation.com/fonts/foliostd-bold.woff2")
+      format("woff2"),
+    url("https://static2.blockrenovation.com/fonts/foliostd-bold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Folio";
+  font-display: swap;
+  src: url("https://static2.blockrenovation.com/fonts/foliostd-extrabold.woff2")
+      format("woff2"),
+    url("https://static2.blockrenovation.com/fonts/foliostd-extrabold.woff")
+      format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Optima";
+  font-display: swap;
+  src: url("https://static2.blockrenovation.com/fonts/optima.woff2")
+      format("woff2"),
+    url("https://static2.blockrenovation.com/fonts/optima.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
