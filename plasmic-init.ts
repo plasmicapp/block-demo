@@ -4,6 +4,13 @@ import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 import Iframe from "./components/Iframe";
 import { ParallaxWrapper } from "./components/ParallaxWrapper";
 import { Reveal } from "./components/Reveal";
+import {
+  GridItem,
+  ProductCollection,
+  ProductImage,
+  ProductPrice,
+  ProductTitle,
+} from "./components/ItemGallery";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -65,4 +72,62 @@ PLASMIC.registerComponent(Reveal, {
     fraction: "number",
     triggerOnce: "boolean",
   },
+});
+
+PLASMIC.registerComponent(ProductCollection, {
+  name: "ProductCollection",
+  displayName: "Product Collection",
+  props: {
+    collectionHandle: {
+      type: "string",
+    },
+    scroller: "boolean",
+    count: "number",
+    children: "slot",
+    columns: {
+      type: "number",
+      defaultValue: 4,
+    },
+    columnGap: {
+      type: "number",
+      defaultValue: 16,
+    },
+    rowGap: {
+      type: "number",
+      defaultValue: 16,
+    },
+    staticContent: "slot",
+  },
+});
+
+PLASMIC.registerComponent(GridItem, {
+  name: "GridItem",
+  props: {
+    rows: {
+      type: "string",
+      defaultValue: "1-2"
+    },
+    cols: {
+      type: "string",
+      defaultValue: "1-2"
+    },
+    children: "slot",
+  },
+});
+
+PLASMIC.registerComponent(ProductTitle, {
+  name: "ProductTitle",
+  props: {},
+});
+
+PLASMIC.registerComponent(ProductImage, {
+  name: "ProductImage",
+  props: {
+    imageNum: "number",
+  },
+});
+
+PLASMIC.registerComponent(ProductPrice, {
+  name: "ProductPrice",
+  props: {},
 });
