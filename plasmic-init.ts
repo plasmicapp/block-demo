@@ -15,9 +15,9 @@ import {
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: "r1ECurSRvCQTGrWaG81BsV", // ID of a project you are using
+      id: "wb85QcufUva5UfGmkYWaZ3", // ID of a project you are using
       token:
-        "z6wwGD1pyR8btKkzeecUUNpxfVY8jKklGiarbESQ2Ea0g8QSaJ0lYbPhOfE9vuBAHkAdAeDhOg1m5LzrM7Jg", // API token for that project
+        "kchu2vEYGhTW85oZCh0xrhAwNbiBZXiwZ6wNpcXrY0UIXnDQKyW7yyncHIMgqnhUE2B7hI9HhgWBtHvp9Rw", // API token for that project
     },
   ],
   // Fetches the latest revisions, whether or not they were unpublished!
@@ -105,11 +105,11 @@ PLASMIC.registerComponent(GridItem, {
   props: {
     rows: {
       type: "string",
-      defaultValue: "1-2"
+      defaultValue: "1-2",
     },
     cols: {
       type: "string",
-      defaultValue: "1-2"
+      defaultValue: "1-2",
     },
     children: "slot",
   },
